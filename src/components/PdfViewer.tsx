@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
 
-// Polyfill/ref: https://github.com/wojtekmaj/react-pdf/issues/1811
+// Polyfill, ref: https://github.com/wojtekmaj/react-pdf/issues/1811
 if (typeof Promise.withResolvers === "undefined") {
   if (window)
     // @ts-expect-error This does not exist outside of polyfill which this is doing
