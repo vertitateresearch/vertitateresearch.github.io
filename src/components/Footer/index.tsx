@@ -12,17 +12,16 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <ExportedImage
-                    src="/images/logo/logo.png"
+                    src="/images/logo/logo.svg"
                     alt="logo"
-                    className="w-8 dark:hidden"
-                    width={64}
-                    height={64}
+                    className="w-6"
+                    width={48}
+                    height={48}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Veritate Research is a high school student-led research
-                  journal that provides publication opportunities for all GA
-                  high school students.
+                  Veritate is a student-led research journal that provides paper
+                  and poster publication opportunities for high school students.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -94,7 +93,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/blog"
+                      href="/issue"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Volume 1 | Issue 1

@@ -19,14 +19,14 @@ const Hero = () => {
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 ">
+            <div className="w-full px-4">
               <div className="mx-auto flex max-w-[800px] flex-row items-center gap-4 text-left">
-                <div>
+                <div className="backdrop-blur p-4">
                   <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                     Veritate Research Journal
                   </h1>
                   <p className="text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                    Lorem ipsum dolor sit amet.
+                    Knowledge is power, research is key.
                   </p>
                 </div>
                 {LOGO}
