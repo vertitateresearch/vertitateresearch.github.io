@@ -34,3 +34,7 @@ yarn-error.log*
 # configurations
 .idea/
 .vscode/
+
+# nextImageOptimizer
+nextImageExportOptimizer/
+next-image-export-optimizer-hashes.json
