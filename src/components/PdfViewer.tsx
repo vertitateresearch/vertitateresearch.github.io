@@ -5,10 +5,7 @@ import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 interface PdfViewerProps {
   pdfPath: string;
@@ -44,7 +41,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfPath, width, height }) => {
           Download PDF
         </button>
       </div>
-      <div className="rounded bg-white p-4 shadow-two dark:bg-gray-dark max-h-[80vh] overflow-y-scroll">
+      <div className="max-h-[80vh] overflow-y-scroll rounded bg-white p-4 shadow-two dark:bg-gray-dark">
         <Document
           file={pdfPath}
           onLoadSuccess={onDocumentLoadSuccess}
