@@ -43,12 +43,12 @@ const Header = () => {
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+            ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container">
-          <div className="relative flex items-center justify-between -mx-4">
+          <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-24 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
@@ -72,7 +72,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex items-center justify-between w-full px-4">
+            <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -106,7 +106,7 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="relative group">
+                      <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
@@ -122,7 +122,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex items-center justify-between py-2 text-base cursor-pointer text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -160,16 +160,10 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="/signin"
-                  className="hidden py-3 text-base font-medium px-7 text-dark hover:opacity-70 dark:text-white md:block"
+                  href="/submit"
+                  className="ease-in-up hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="hidden px-8 py-3 text-base font-medium text-white transition duration-300 rounded-sm ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
+                  Submit
                 </Link>
                 <div>
                   <ThemeToggler />

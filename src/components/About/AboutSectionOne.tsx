@@ -7,11 +7,37 @@ const checkIcon = (
   </svg>
 );
 
+const crossIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+    className="size-5"
+    width={20}
+    height={20}
+  >
+    <path
+      fillRule="evenodd"
+      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
+      </span>
+      {text}
+    </p>
+  );
+
+  const NegList = ({ text }) => (
+    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-amber-400 bg-opacity-20 text-amber-600 ">
+        {crossIcon}
       </span>
       {text}
     </p>
@@ -24,44 +50,57 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
+                title="Mission"
+                paragraph="Lorem ipsum dolor sit amet"
+                mb="12px"
               />
+
+              <p className="mb-4 text-base leading-relaxed text-body-color">
+                As high school researchers, we recognize the importance of
+                sharing our work with the world and its challenges.
+              </p>
 
               <div
                 className="mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
                 <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full">
+                    <NegList text="Lack of publication opportunities" />
+                    <NegList text="Cannot find mentors" />
+                    <NegList text="No feedback on research" />
                   </div>
+                </div>
+              </div>
 
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+              <p className="mb-4 text-base leading-relaxed text-body-color">
+                We hope to bridge the gap between high school students and the
+                research community by providing a platform for students to
+                publish their work, connect with mentors, and receive feedback
+                on their research.
+              </p>
+
+              <div
+                className="mb-12 max-w-[570px] lg:mb-0"
+                data-wow-delay=".15s"
+              >
+                <div className="mx-[-12px] flex flex-wrap">
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full">
+                    <List text="Detailed feedback from multiple PhD mentors" />
+                    <List text="Publication opportunities" />
+                    <List text="Mentorship" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 hidden">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
                   src="/images/about/about-image.svg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>
             </div>

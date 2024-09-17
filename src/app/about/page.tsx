@@ -1,12 +1,12 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Startup and SaaS",
-  description: "This is About Page for Startup Nextjs Template",
+  title: "About | Veritate Research",
+  description:
+    "Veritate Research is a high school student-led research journal that provides publication opportunities for all GA high school students.",
   // other metadata
 };
 
@@ -15,10 +15,10 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Veritate Research is a high school student-led research journal that provides publication opportunities for all GA high school students."
       />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/*  TODO: Editorial board and students */}
     </>
   );
 };

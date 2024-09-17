@@ -1,6 +1,6 @@
 export type Feature = {
   id: number;
-  icon: JSX.Element;
+  cover: JSX.Element;
   title: string;
   paragraph: string;
 };
