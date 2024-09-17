@@ -1,13 +1,13 @@
 // src/data/projectsData.tsx
 
-import { Feature } from "@/types/feature";
-import Image from "next/image";
+import { Project } from "@/types/project";
+import ExportedImage from "next-image-export-optimizer";
 
-const projectsData: Feature[] = [
+const projectsData: Project[] = [
   {
     id: 1,
     cover: (
-      <Image
+      <ExportedImage
         src="/images/projects/genome-sequencing.png"
         alt="Genome Sequencing"
         width={70}
@@ -17,12 +17,12 @@ const projectsData: Feature[] = [
     ),
     title: "Genome Sequencing",
     paragraph:
-      "Advanced genome sequencing techniques enable comprehensive analysis of genetic information, facilitating breakthroughs in personalized medicine and biotechnology.",
+    "Advanced genome sequencing techniques enable comprehensive analysis of genetic information, facilitating breakthroughs in personalized medicine and biotechnology.",
   },
   {
     id: 2,
     cover: (
-      <Image
+      <ExportedImage
         src="/images/projects/data-mining.png"
         alt="Data Mining"
         width={70}
@@ -37,7 +37,7 @@ const projectsData: Feature[] = [
   {
     id: 3,
     cover: (
-      <Image
+      <ExportedImage
         src="/images/projects/machine-learning.png"
         alt="Machine Learning"
         width={70}
@@ -52,7 +52,7 @@ const projectsData: Feature[] = [
   {
     id: 4,
     cover: (
-      <Image
+      <ExportedImage
         src="/images/projects/protein-modeling.png"
         alt="Protein Modeling"
         width={70}
@@ -67,7 +67,7 @@ const projectsData: Feature[] = [
   {
     id: 5,
     cover: (
-      <Image
+      <ExportedImage
         src="/images/projects/biostatistics.png"
         alt="Biostatistics"
         width={70}

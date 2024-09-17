@@ -15,7 +15,7 @@ const Projects = () => {
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {projectsData.map((feature) => (
-              <SingleProject key={feature.id} feature={feature} />
+              <SingleProject key={feature.id} project={feature} />
             ))}
           </div>
         </div>

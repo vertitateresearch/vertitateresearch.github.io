@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import ExportedImage from "next-image-export-optimizer";
 
 const Header = () => {
   // Navbar toggle
@@ -56,14 +56,14 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
+                <ExportedImage
                   src="/images/logo/logo-2.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
-                <Image
+                <ExportedImage
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}

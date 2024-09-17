@@ -1,5 +1,5 @@
-import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import ExportedImage from "next-image-export-optimizer";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -94,9 +94,9 @@ const AboutSectionOne = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 hidden">
+            <div className="hidden w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
+                <ExportedImage
                   src="/images/about/about-image.svg"
                   alt="about-image"
                   fill

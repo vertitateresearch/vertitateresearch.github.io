@@ -1,9 +1,9 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 const Hero = () => {
   const LOGO = (
     <div className="rounded-full bg-slate-50">
-      <Image
+      <ExportedImage
         src="/images/logo/logo-lg.png"
         alt="logo"
         width={256}
@@ -18,7 +18,7 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
-          <div className="flex flex-wrap -mx-4">
+          <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 ">
               <div className="mx-auto flex max-w-[800px] flex-row items-center gap-4 text-left">
                 <div>
@@ -35,29 +35,22 @@ const Hero = () => {
           </div>
         </div>
 
-        <div
-          className="
-          absolute inset-0 bottom-0 left-0 right-0 top-0 z-[-1]
-          bg-cover
-          bg-center
-          dark:hidden
-        "
-          style={{
-            backgroundImage: "url('/images/hero/hero-bg-light.jpg')",
-          }}
-        ></div>
-
-        <div
-          className="
-          absolute inset-0 bottom-0 left-0 right-0 top-0 z-[-1]
-          hidden
-          bg-cover
-          bg-center dark:block
-        "
-          style={{
-            backgroundImage: "url('/images/hero/hero-bg-dark.jpg')",
-          }}
-        ></div>
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-[-1]">
+          <ExportedImage
+            src="/images/hero/hero-bg-light.jpg"
+            alt="hero-bg"
+            className="object-cover dark:hidden"
+            fill
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-[-1]">
+          <ExportedImage
+            src="/images/hero/hero-bg-dark.jpg"
+            alt="hero-bg"
+            className="hidden object-cover dark:block"
+            fill
+          />
+        </div>
       </section>
     </>
   );
