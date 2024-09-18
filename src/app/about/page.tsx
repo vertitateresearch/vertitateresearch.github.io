@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutSectionThree from "@/components/About/AboutSectionThree";
 
 export const metadata: Metadata = {
   title: "About | Veritate Research",
@@ -15,12 +16,12 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName="About"
         description="Veritate Research is a high school student-led research journal that provides publication opportunities for all GA high school students."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
-      {/*  TODO: Editorial board and students */}
+      <AboutSectionThree />
     </>
   );
 };

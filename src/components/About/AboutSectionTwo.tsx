@@ -25,10 +25,10 @@ const editorsData: Editor[] = [
   },
   {
     name: "Dr. William Cossen",
-    title: "Historian",
+    title: "US History Researcher",
     bio: "Dr. Cossen is a historian of the nineteenth- and twentieth-century United States, specializing in the intersection of religion and nationalism. He serves as the book review editor for H-SHGAPE (Society for Historians of the Gilded Age and Progressive Era).",
     image: "/images/about/editors/dr-cossen.png",
-  }
+  },
 ];
 
 const SingleEditor = ({
@@ -42,7 +42,7 @@ const SingleEditor = ({
   const modal = <p className="mx-auto leading-loose">{bio}</p>;
   return (
     <div
-      className="container cursor-pointer bg-white p-8 shadow-one"
+      className="container cursor-pointer bg-white p-8 shadow-one dark:bg-gray-dark"
       onClick={() =>
         setModal({
           open: true,
@@ -68,29 +68,36 @@ const AboutSectionTwo = () => {
     open: false,
     content: (
       <p className="mx-auto my-auto">
-        The modal shouldn&apos;t be displayed unless there is content to display.
+        The modal shouldn&apos;t be displayed unless there is content to
+        display.
       </p>
     ),
   });
 
   return (
     <>
+      <div
+        className={`duration-300ms fixed bottom-0 left-0 right-0 top-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-lg transition-all ${modal.open ? "pointer-events-auto cursor-pointer opacity-100 " : "pointer-events-none opacity-0"}`}
+        onClick={() => setModal({ ...modal, open: false })}
+      >
         <div
-          className={`duration-300ms fixed bottom-0 left-0 right-0 top-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-lg transition-all ${modal.open ? "pointer-events-auto cursor-pointer opacity-100 " : "pointer-events-none opacity-0"}`}
+          className="container max-w-[800px] rounded-xl bg-white p-8 shadow-one"
           onClick={() => setModal({ ...modal, open: false })}
         >
-          <div
-            className="container max-w-[800px] rounded-xl bg-white p-8 shadow-one"
-            onClick={() => setModal({ ...modal, open: false })}
-          >
-            {modal.content}
-          </div>
+          {modal.content}
         </div>
-      <section id="editoral-board">
-        <div className="container mt-8">
-          <div className="-mx-4">
-            <SectionTitle title="Editorial Board" paragraph="" mb="12px" />
-            <div className="mb-[100px] grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      </div>
+      <section id="editoral-board" className="py-16 md:py-20 lg:py-28">
+        <div className="container">
+          <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+            <SectionTitle title="Editorial Board" paragraph="" mb="1rem" />
+            <p className="mb-[80px] max-w-[800px] leading-relaxed text-body-color">
+              The Veritate Research editoral board consists of academics and
+              research professionals. The Board provides valuable feedback for
+              student researchers and ensures the quality of the research
+              published in the journal.
+            </p>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {editorsData.map((editor, i) => (
                 <SingleEditor key={i} editor={editor} setModal={setModal} />
               ))}
