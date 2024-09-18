@@ -20,7 +20,7 @@ const editorsData: Editor[] = [
   {
     name: "Dr. Courtney Cox",
     title: "Cellular and Molecular Researcher",
-    bio: "Dr. Cox is a research specialist at Meeks's Lab, focusing on esearch surrounding the immune response to factor VIII in patients with hemophilia A. Dr. Cox has been nominated for Presidential Award for Excellence in Mathematics and Science Teaching, earned $10,000 grant for her research program, and published over 50 papers.",
+    bio: "Dr. Cox is a research specialist at Meeks's Lab, focusing on research surrounding the immune response to factor VIII in patients with hemophilia A. Dr. Cox has been nominated for Presidential Award for Excellence in Mathematics and Science Teaching, earned $10,000 grant for her research program, and published over 50 papers.",
     image: "/images/about/editors/dr-cox.png",
   },
   {
@@ -68,7 +68,7 @@ const AboutSectionTwo = () => {
     open: false,
     content: (
       <p className="mx-auto my-auto">
-        The modal shouldn't be displayed unless there is content to display.
+        The modal shouldn&apos;t be displayed unless there is content to display.
       </p>
     ),
   });
