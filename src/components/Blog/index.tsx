@@ -4,7 +4,7 @@ import SectionTitle from "../Common/SectionTitle";
 import ExportedImage from "next-image-export-optimizer";
 import { useRouter } from "next/navigation";
 
-const Blog = () => {
+const Project = () => {
   const router = useRouter();
 
   return (
@@ -42,4 +42,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Project;
