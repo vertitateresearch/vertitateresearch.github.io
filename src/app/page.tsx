@@ -1,4 +1,4 @@
-import Project from "@/components/Blog";
+import Project from "src/components/Project";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Projects from "src/components/Projects";
 import Hero from "@/components/Hero";

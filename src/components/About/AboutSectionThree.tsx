@@ -24,16 +24,16 @@ const studentsData: Student[] = [
     image: "images/about/students/katie-chen.png",
   },
   {
-    name: "Katie Chen",
-    title: "Founder and Editor-in-Chief",
-    bio: "Katie is a student at the Gwinnett School of Mathematics, Science, and Technology. She is passionate about research and founded Veritate Research to provide a platform for students to share their research. Her research focus on the intersection of computer science and biology.",
-    image: "images/about/students/katie-chen.png",
+    name: "Yubo Cao",
+    title: "Development Head and Associate-Editor",
+    bio: "Yubo is a senior at the Gwinnett School of Mathematics, Science, and Technology. He is passionate about computer science and research.",
+    image: "images/logo/logo.svg",
   },
   {
-    name: "Katie Chen",
-    title: "Founder and Editor-in-Chief",
-    bio: "Katie is a student at the Gwinnett School of Mathematics, Science, and Technology. She is passionate about research and founded Veritate Research to provide a platform for students to share their research. Her research focus on the intersection of computer science and biology.",
-    image: "images/about/students/katie-chen.png",
+    name: "Ramin Sarkar",
+    title: "Associate-Editor",
+    bio: "Meow meow meow",
+    image: "images/logo/logo.svg",
   },
 ];
 

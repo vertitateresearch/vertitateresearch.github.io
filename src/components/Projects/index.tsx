@@ -8,8 +8,8 @@ const Projects = () => {
       <section id="actions" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Project Broad"
-            paragraph="Project from Veritate Volume 1 | Issue 1"
+            title="Project Board"
+            paragraph=""
             center
           />
 

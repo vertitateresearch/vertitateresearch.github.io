@@ -23,12 +23,12 @@ const editorsData: Editor[] = [
     bio: "Dr. Cox is a research specialist at Meeks's Lab, focusing on research surrounding the immune response to factor VIII in patients with hemophilia A. Dr. Cox has been nominated for Presidential Award for Excellence in Mathematics and Science Teaching, earned $10,000 grant for her research program, and published over 50 papers.",
     image: "/images/about/editors/dr-cox.png",
   },
-  {
-    name: "Dr. William Cossen",
-    title: "US History Researcher",
-    bio: "Dr. Cossen is a historian of the nineteenth- and twentieth-century United States, specializing in the intersection of religion and nationalism. He serves as the book review editor for H-SHGAPE (Society for Historians of the Gilded Age and Progressive Era).",
-    image: "/images/about/editors/dr-cossen.png",
-  },
+  // {
+  //   name: "Dr. William Cossen",
+  //   title: "US History Researcher",
+  //   bio: "Dr. Cossen is a historian of the nineteenth- and twentieth-century United States, specializing in the intersection of religion and nationalism. He serves as the book review editor for H-SHGAPE (Society for Historians of the Gilded Age and Progressive Era).",
+  //   image: "/images/about/editors/dr-cossen.png",
+  // },
 ];
 
 const SingleEditor = ({

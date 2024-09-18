@@ -9,12 +9,12 @@ const Project = () => {
 
   return (
     <section
-      id="blog"
+      id="project"
       className="bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28"
     >
       <div className="container">
         <SectionTitle
-          title="Our Latest Series"
+          title="Fall 2024 Issue"
           paragraph="VOLUME 1 | ISSUE 1"
           // mb="1rem"
           center
