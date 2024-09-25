@@ -27,7 +27,6 @@ const studentsData: Student[] = [
     name: "Yubo Cao",
     title: "Development Head and Associate-Editor",
     bio: "Yubo is a senior at the Gwinnett School of Mathematics, Science, and Technology. He is passionate about computer science and research. His research focuses on chronic myeloid leukemia, gene editing, and bioinformatics.",
-    // TODO: IDK what Yubo's bio is
     image: "images/about/students/yubo-cao.png",
   },
   {
