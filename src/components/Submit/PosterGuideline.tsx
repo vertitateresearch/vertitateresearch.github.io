@@ -20,10 +20,14 @@ const PosterGuideline = () => {
             <li>
               The summary should be different from the abstract. The summary
               should outline the main points of your research in an engaging
-              manner that can be easily read and understood by a non-expert. A
-              summary should focus on the conclusions of your research, while
-              the abstract often also briefly describes the methods and details
-              of the study.
+              manner that can be easily read and understood by a non-expert.
+            </li>
+            <li>
+              <p>
+                A summary should focus on the conclusions of your research, while
+                the abstract often also briefly describes the methods and details
+                of the study.
+              </p>
             </li>
           </ul>
         </li>
@@ -50,13 +54,19 @@ const PosterGuideline = () => {
           </ul>
         </li>
         <li>
+          <p>
+            The aspect ratio of the poster should be 16:9 (the default size for
+            Google Slides).
+          </p>
+        </li>
+        <li>
           <p>The work should be submitted in .pdf format.</p>
         </li>
         <li>
           <p>
             We prefer that the manuscript be prepared using an editing program
             such as Google Slides. If your work is produced in software such as
-            LaTeX, please include both a PDF and your source files.
+            LaTeX, please only include a PDF file.
           </p>
         </li>
       </ul>
@@ -86,8 +96,8 @@ const PosterGuideline = () => {
       <ul>
         <li>
           <p>
-            Figures may be incorporated into the body of the poster for
-            readability.
+            Figures and tables should be incorporated into the body of the
+            poster for readability.
           </p>
           <ul>
             <li>
@@ -103,9 +113,6 @@ const PosterGuideline = () => {
             legends in text format. For plots and graphs, axes should be clearly
             marked and legible.
           </p>
-        </li>
-        <li>
-          <p>Tables should be submitted in text format.</p>
         </li>
       </ul>
     </article>

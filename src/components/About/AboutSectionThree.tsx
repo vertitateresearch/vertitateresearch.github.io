@@ -26,14 +26,15 @@ const studentsData: Student[] = [
   {
     name: "Yubo Cao",
     title: "Development Head and Associate-Editor",
-    bio: "Yubo is a senior at the Gwinnett School of Mathematics, Science, and Technology. He is passionate about computer science and research.",
-    image: "images/logo/logo.svg",
+    bio: "Yubo is a senior at the Gwinnett School of Mathematics, Science, and Technology. He is passionate about computer science and research. His research focuses on chronic myeloid leukemia, gene editing, and bioinformatics.",
+    // TODO: IDK what Yubo's bio is
+    image: "images/about/students/yubo-cao.png",
   },
   {
     name: "Ramin Sarkar",
     title: "Associate-Editor",
-    bio: "Meow meow meow",
-    image: "images/logo/logo.svg",
+    bio: "Ramin is a student at the Gwinnett School of Mathematics, Science, and Technology. His research focuses on age-related neurodegenerative disorders, particularly Alzheimer's Disease.",
+    image: "images/about/students/ramin-sarkar.png",
   },
 ];
 

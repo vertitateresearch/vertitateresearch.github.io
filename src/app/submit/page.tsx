@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 import Link from "next/link";
+import { PAPER_SUBMISSION_LINK, POSTER_SUBMISSION_LINK } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Submission Page",
@@ -44,10 +45,15 @@ const AboutPage = () => {
           submission form by clicking the button below.
         </p>
         <div className="flex flex-row flex-wrap items-center justify-center gap-4">
-          {/* TODO: Google Form Link */}
           <Link
-            href="#"
-            className="rounded-md bg-primary px-4 py-2 text-lg text-white"
+            href={PAPER_SUBMISSION_LINK}
+            className="bg-primary px-6 py-3 text-lg text-white"
+          >
+            Submit a Paper
+          </Link>
+          <Link
+            href={POSTER_SUBMISSION_LINK}
+            className="bg-primary px-6 py-3 text-lg text-white"
           >
             Submit a Poster
           </Link>

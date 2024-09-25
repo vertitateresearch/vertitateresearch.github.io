@@ -25,19 +25,19 @@ const menuData: Menu[] = [
     path: "/submit",
     newTab: false,
   },
-  {
-    id: 3,
-    title: "Archive",
-    newTab: true,
-    submenu: [
-      {
-        id: 1,
-        title: "Volume 1 | Issue 1",
-        path: "/archive/volume-1-issue-1",
-        newTab: false,
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Archive",
+  //   newTab: true,
+  //   submenu: [
+  //     {
+  //       id: 1,
+  //       title: "Volume 1 | Issue 1",
+  //       path: "/archive/volume-1-issue-1",
+  //       newTab: false,
+  //     },
+  //   ],
+  // },
   {
     id: 4,
     title: "Project Board",

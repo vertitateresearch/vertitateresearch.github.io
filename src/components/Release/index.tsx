@@ -1,12 +1,9 @@
-"use client";
-
 import SectionTitle from "../Common/SectionTitle";
 import ExportedImage from "next-image-export-optimizer";
-import { useRouter } from "next/navigation";
+import { PAPER_SUBMISSION_LINK } from "@/lib/constants";
+import Link from "next/link";
 
-const Project = () => {
-  const router = useRouter();
-
+const Release = () => {
   return (
     <section
       id="project"
@@ -16,7 +13,7 @@ const Project = () => {
         <SectionTitle
           title="Fall 2024 Issue"
           paragraph="VOLUME 1 | ISSUE 1"
-          // mb="1rem"
+          mb="3rem"
           center
         />
         <ExportedImage
@@ -26,20 +23,20 @@ const Project = () => {
           height={600}
           className={"mx-auto"}
         />
-        <div className="mx-auto mt-4 flex max-w-[800px] flex-row justify-center gap-2">
-          <button className="cursor-auto rounded-md bg-white bg-opacity-20 px-4 py-2 text-lg text-body-color">
+        <div className="mx-auto mt-12 flex max-w-[800px] flex-row justify-center gap-2">
+          <button className="cursor-auto bg-white bg-opacity-20 px-6 py-3 text-lg text-body-color">
             Digital Access
           </button>
-          <button
-            className="rounded-md bg-primary px-4 py-2 text-lg text-white"
-            onClick={() => router.push("/submit")}
+          <Link
+            className="bg-primary px-6 py-3 text-lg text-white"
+            href={PAPER_SUBMISSION_LINK}
           >
-            Submit
-          </button>
+            Submit a Paper
+          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default Project;
+export default Release;

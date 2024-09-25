@@ -21,12 +21,11 @@ const AboutPage = () => {
       {/*  pageName="About"*/}
       {/*  description="Veritate Research is a high school student-led research journal that provides publication opportunities for all GA high school students."*/}
       {/*/>*/}
-      <div className="container mt-[200px] flex flex-row gap-4 justify-between">
+      <div className="container mt-[200px] flex flex-row justify-between gap-4">
         <div className="">
           <SectionTitle
             title="About"
-            paragraph="Veritate aims to showcase high school research across all disciplines,
-          including natural sciences, social sciences, and humanities. At
+            paragraph="Veritate aims to showcase high school research across all STEM disciplines through both papers and posters. At
           Veritate, we recognize that many students engage in research but often
           lack a platform to share their work. Veritate provides an accessible
           space for publication, free from the constraints of traditional
@@ -36,7 +35,7 @@ const AboutPage = () => {
           through rigorous peer and editorial review."
           />
         </div>
-        <div className="flex items-center justify-center p-4 aspect-square rounded-full bg-slate-50 dark:bg-slate-700">
+        <div className="flex aspect-square items-center justify-center rounded-full bg-slate-50 p-4 dark:bg-slate-700">
           <ExportedImage
             src="images/logo/logo.svg"
             alt="Veritate Research Logo"

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Projects from "@/components/Projects";
 
 export const metadata: Metadata = {
-  title: "Project Board | Veritate Research",
+  title: "Release Board | Veritate Research",
 };
 
 const AboutPage = () => {

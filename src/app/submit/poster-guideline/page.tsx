@@ -13,7 +13,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="Poster Submission"
-        description="Guideline for submitting a research poster to Veritate Research."
+        description="Guidelines for submitting a research poster to Veritate Research."
       />
       <div className="container my-[100px]">
         <PosterGuideline />

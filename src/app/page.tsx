@@ -1,4 +1,4 @@
-import Project from "src/components/Project";
+import Release from "src/components/Release";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Projects from "src/components/Projects";
 import Hero from "@/components/Hero";
@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Project />
+      <Release />
       <Projects />
       {/*<Contact />*/}
     </>
