@@ -19,7 +19,7 @@ type Modal = {
 const editorsData: Editor[] = [
   {
     name: "Dr. Courtney Cox",
-    title: "Cellular and Molecular Researcher",
+    title: "Faculty Editor-in-chief",
     bio: "Dr. Cox is a researcher at Emory's Meeks's Lab, focusing on research surrounding the immune response to factor VIII in patients with hemophilia A. Dr. Cox has been nominated for Presidential Award for Excellence in Mathematics and Science Teaching, earned $10,000 grant for her research program, and published over 50 papers.",
     image: "/images/about/editors/dr-cox.png",
   },
@@ -48,7 +48,7 @@ const SingleEditor = ({
   const modal = <p className="mx-auto leading-loose">{bio}</p>;
   return (
     <div
-      className="container cursor-pointer bg-white p-8 shadow-one dark:bg-gray-dark"
+      className="container p-8 bg-white cursor-pointer shadow-one dark:bg-gray-dark"
       onClick={() =>
         setModal({
           open: true,
@@ -56,7 +56,7 @@ const SingleEditor = ({
         })
       }
     >
-      <div className="mb-4 aspect-square size-36 overflow-clip rounded-full bg-slate-400 bg-opacity-10 p-2 pt-4">
+      <div className="p-2 pt-4 mb-4 rounded-full aspect-square size-36 overflow-clip bg-slate-400 bg-opacity-10">
         <div className="relative -mb-4 size-32">
           <ExportedImage src={image} alt={`Avatar of ${name}`} fill />
         </div>

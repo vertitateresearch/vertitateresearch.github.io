@@ -48,7 +48,7 @@ const SingleStudent = ({
   const modal = <p className="mx-auto leading-loose">{bio}</p>;
   return (
     <div
-      className="container cursor-pointer p-4"
+      className="container p-4 cursor-pointer"
       onClick={() =>
         setModal({
           open: true,
@@ -56,9 +56,14 @@ const SingleStudent = ({
         })
       }
     >
-      <div className="mb-4 aspect-square size-36 overflow-clip rounded-full bg-slate-400 bg-opacity-10 p-2 pt-4">
+      <div className="p-2 pt-4 mb-4 rounded-full aspect-square size-36 overflow-clip bg-slate-400 bg-opacity-10">
         <div className="relative -mb-4 size-32">
-          <ExportedImage src={image} alt={`Avatar of ${name}`} fill />
+          <ExportedImage
+            src={image}
+            alt={`Avatar of ${name}`}
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
       <p className="mb-2 text-2xl font-semibold text-black dark:text-white">
